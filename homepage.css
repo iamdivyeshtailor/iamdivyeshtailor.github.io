@@ -1,0 +1,33 @@
+h1{
+    border: 3px solid black;
+    padding-bottom: 1em;
+    text-align: center; color: chartreuse; padding-top: 1em;
+    text-transform: uppercase;
+    block-size:1em;
+    text-underline-position: below;
+}
+h3{
+    color: chartreuse;
+    text-align: center;
+    
+}
+p{ 
+    color: chartreuse;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+body{
+    background-color: darkgray;
+}
+div{
+    margin: 0.5cm;
+    color: whitesmoke;
+    font-weight: 700;
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    
+    
+}
