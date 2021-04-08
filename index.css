@@ -22,14 +22,6 @@ body{
     background-color: black;
 
 }
-div1, div2, div3 ,div4, div5{
-    color:chartreuse;
-    background-color: black;
-    padding-inline-start: 1em; 
-    padding-inline-end: 1em;
-    padding-bottom: 1em; 
-    padding-top: 1em;           
-}
 p{ 
     color: chartreuse;
     padding-left: 10em;
@@ -46,8 +38,11 @@ h5{
     background-color: black;    
     }
 img{
-    width: 1200px ; height: 900px;
+    padding-top: 50px;
+    height: 400px; 
+    width: 500px;
     interval: 1
 }
-
-    
+a {
+    border:solid 3px black; 
+ }
