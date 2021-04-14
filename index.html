@@ -8,23 +8,14 @@
 </head>
 <body style="background-color:black ;">
     <h1>CLUSTER USING RASPBERRY PI</h1><br>
-    <a href="http://127.0.0.1:5500/homepage.html"
-        target="_blank">HOMEPAGE</a>
-    
-    <a href="http://127.0.0.1:5500/Photos.html"
-        target="_blank">PHOTOS</a>
-    
-    <a href="http://127.0.0.1:5500/details.html"
-        target="_blank">DETAILS</a>
-
-    <a href="http://127.0.0.1:5500/contact.html"
-        target="_blank">CONTACT</a>
-
-    <a href="http://127.0.0.1:5500/email.html"
-      target="_blank">E-MAIL</a><br>
-        
+        <div class="sidebar">
+            <a class="active" href="homepage.html">HOMEPAGE</a>
+            <a class="active" href="Photos.html">Photos</a>
+            <a class="active" href="details.html">Details</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a class="active" href="email.html">E-mail</a>
+      </div>
         <img src="signal-2021-02-28-150919-4.jpg" style="width: 100%;" alt="https://www.dubox.com/disk/home#/all?path=%2F&vmode=list" class="src">
-        
         <p>This is How Our Project Will Look Like.</p>
           <p>We have take 4 raspberry pi 3 B and put them in a series of 4. So that this 4 device will work in parallel and give output in a single unit.
             Raspberry pi has its own OS called Raspbian
@@ -32,9 +23,14 @@
             Some programs can only utilize  25% of total cluster capability. They use one core per node making it inefficient
             A modern Core i7 can easily beat 4 node rpi cluster in single threadded workloads.
             Building a rpi cluster on bigger scale makes it more expensive 
-            It is only Good for some type of parallel Workloads.</p>
-    
-    
-        
-    </body>
+            It is only Good for some type of parallel Workloads.
+        </p>
+        <img src="R-PI-3B-pinout_800x531.jpg.jpg" style="width: 100%;" alt="" class="src">
+        <p>A powerful feature of the Raspberry Pi is the row of GPIO (general-purpose input/output) pins along the top edge of the board. 
+            A 40-pin GPIO header is found on all current Raspberry Pi boards (unpopulated on Pi Zero and Pi Zero W). 
+            Prior to the Pi 1 Model B+ (2014), 
+            boards comprised a shorter 26-pin header.</p>
+        <p>Any of the GPIO pins can be designated (in software) as an input or output pin and used for a wide range of purposes.</p>
+        <p>the numbering of the GPIO pins is not in numerical order; GPIO pins 0 and 1 are present on the board (physical pins 27 and 28) but are reserved for advanced use</p>
+        </body>
 </html>
