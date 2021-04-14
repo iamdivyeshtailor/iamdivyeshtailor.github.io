@@ -1,5 +1,5 @@
     h1{
-    border: 3px solid black;
+    border: 2px solid chartreuse;
     padding-bottom: 1em;
     text-align: center; color: chartreuse; padding-top: 1em;
     text-transform: uppercase;
@@ -12,37 +12,29 @@ a{
     padding-inline-start: 1em; 
     padding-inline-end: 1em;
     padding-bottom: 1em; 
-    padding-top: 1em;           
+    padding-top: 1em; 
+    border:solid 1px chartreuse           
 }
-h4{
-    text-align: right;
-    color: chartreuse;
 }
 body{
     background-color: black;
 
 }
 p{ 
-    color: chartreuse;
-    padding-left: 10em;
+    color:white;
+   
 }
 ul{
     text-align: left;
     color: chartreuse;
     }
-h5{
-    color: chartreuse;
-    font-family: 'Times New Roman', Times, serif;
-    border: solid black;
-    text-align: center;
-    background-color: black;    
+h4{
+    padding-left: 11em;
+    
     }
 img{
-    padding-top: 50px;
-    height: 400px; 
-    width: 500px;
+    padding-top: 35px;
     interval: 1
 }
-a {
-    border:solid 3px black; 
- }
+
+ 

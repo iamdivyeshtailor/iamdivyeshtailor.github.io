@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Practice</title>
         <link rel="stylesheet" href="index.css">
-        <style>
-            h1{
-                background-image: url(signal-2021-02-28-150919-4.jpg);
-            }
-            </style>
 </head>
-<body style="background-color:grey ;">
+<body style="background-color:black ;">
     <h1>CLUSTER USING RASPBERRY PI</h1><br>
     <a href="http://127.0.0.1:5500/homepage.html"
         target="_blank">HOMEPAGE</a>
@@ -29,7 +25,16 @@
         
         <img src="signal-2021-02-28-150919-4.jpg" style="width: 100%;" alt="https://www.dubox.com/disk/home#/all?path=%2F&vmode=list" class="src">
         
-
+        <p>This is How Our Project Will Look Like.</p>
+          <p>We have take 4 raspberry pi 3 B and put them in a series of 4. So that this 4 device will work in parallel and give output in a single unit.
+            Raspberry pi has its own OS called Raspbian
+            As we know raspberry pi only has 1 gb of onboard memory
+            Some programs can only utilize  25% of total cluster capability. They use one core per node making it inefficient
+            A modern Core i7 can easily beat 4 node rpi cluster in single threadded workloads.
+            Building a rpi cluster on bigger scale makes it more expensive 
+            It is only Good for some type of parallel Workloads.</p>
+    
+    
         
     </body>
 </html>
