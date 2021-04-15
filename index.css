@@ -1,42 +1,90 @@
     h1{
     border: 2px solid chartreuse;
     padding-bottom: 1em;
-    text-align: center; color: chartreuse; padding-top: 1em;
+    text-align: center; color: chartreuse; 
+    padding-top: 1em;
     text-transform: uppercase;
     block-size:1em;
     text-underline-position: below;
 }
-a{
-    color: black; font-weight: bold;
-    padding-inline-start: 1em;
-    padding-inline-end: 1em; 
-    padding-bottom: 1em; 
-    padding-top: 1em; 
-    border:solid 2px black
-    
-    
-    
-}
 div{
     background-color: white;
-    padding-inline-start: 1em; 
-    padding-inline-end: 1em; 
-    padding-bottom: 1em; 
-    padding-top: 1em; 
-    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;    
+    }
+.sidebar{
+        position: fixed;
+        left:0;
+        width: 200px;
+        height: 370px;
+        background:#e2e2e2
+    }
+.sidebar header{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        background: chartreuse;
+        user-select: none;
+    }
+.sidebar ul a{
+        display: block;
+        height: 50px;
+        width: 150px;
+        line-height:50px;
+        font-size: 20px;
+        color: white;
+        padding-left: 30px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, 1.);
+        border-bottom: 1px solid black ;
+        transition: .4s;
+        cursor:-moz-zoom-in;
+    }
+ul li:hover a{
+    padding-left: 40px;
+}
+.sidebar ul a i{  
+    margin-right: 16px;  
 }
 
 body{
-    background-color: black;
-
+    background-color: white;
 }
+
 p{ 
-    color:white;
-   
+    color:white;   
 }
 
 img{
     padding-top: 35px;
 }
+#check{
+     display: none;
+}
 
- 
+label #btn,label #cancel{
+     position: absolute;
+     cursor: pointer;
+     background: #e2e2e2;
+     border-radius: 3px; 
+ }
+ label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+
+ }
+ label #cancel{
+    z-index: 1111;
+    left: 195px;
+    top: 17px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+     
+ }

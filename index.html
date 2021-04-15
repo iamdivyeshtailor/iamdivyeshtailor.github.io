@@ -7,29 +7,46 @@
         <link rel="stylesheet" href="index.css">
 </head>
 <body style="background-color:black ;">
-    <h1>CLUSTER USING RASPBERRY PI</h1><br>
-        <div>
-            <a class="active" href="homepage.html">Homepage</a>
-            <a class="active" href="Photos.html">Photos</a>
-            <a class="active" href="details.html">Details</a>
-            <a class="active" href="contact.html">Contact</a>
-            <a class="active" href="email.html">E-mail</a>
-      </div>
-
+    <input type="chechbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-times" id="cancle"></i>
+    </label>
+        <div class="sidebar">
+            <header>Menu</header>
+            <ul>
+                <li><a href="homepage.html"><iclass="fa fa-qrcode"></i>Homepage</a></li>
+                <li><a href="Photos.html"><iclass="fa fa-photos"></i>Photos</a></li>
+                <li><a href="details.html"><iclass="fa fa-details"></i>Details</a></li>
+                <li><a href="contact.html"><iclass="fa fa-contact"></i>Contact</a></li>
+                <li><a href="email.html"><iclass="fa fa-email"></i>Email</a></li>
+            </ul>
+ </div>
+    <h1>CLUSTER USING RASPBERRY PI</h1><hr>
+    <h4 style="color: white; text-align: center;">This is How Our Project Will Look Like.</h4> <hr>
         <img src="Clusters-l1600-3-700x700.jpg" style="width: 100%;" alt="https://www.dubox.com/disk/home#/all?path=%2F&vmode=list" class="src">
-        <h4 style="color: white; text-align: center;">This is How Our Project Will Look Like.</h4> 
         <p>We have take 4 raspberry pi 3 B and put them in a series of 4. So that this 4 device will work in parallel and give output in a single unit.
             Raspberry pi has its own OS called Raspbian
             As we know raspberry pi only has 1 gb of onboard memory
             Some programs can only utilize  25% of total cluster capability. They use one core per node making it inefficient
             A modern Core i7 can easily beat 4 node rpi cluster in single threadded workloads.
             Building a rpi cluster on bigger scale makes it more expensive 
-            It is only Good for some type of parallel Workloads.
-        </p>
-        <h4 style="color:white; text-align:center; "> This is How Raspberry Pi 3 B Looks Like :- </h4>
-        <img src="25255898046_bf32f5aa51_k.jpg" style="width: 100%;" alt="" class="src">
-        <h4 style="color: white; text-align: center;">Specifications</h4> 
-        <p>CPU: Quad-core 64-bit ARM Cortex A53 clocked at 1.2 GHz</p>
+            It is only Good for some type of parallel Workloads.</p><hr>
+
+            <h4 style="color: white; text-align: center;">Raspberry PI B All Ports Specifications</h4> <hr>
+            <img src="rpi_700x.jpg" style="width: 100%;" alt="" class="src">
+            <h4>Raspberry Pi 3 B Ports Specifications</h4>
+                <p>The Raspberry Pi has a number of ports which you will use to control the Raspberry Pi, and it can use to control other devices. Your Raspberry Pi will have the following ports:</p>
+                <p>USB – USB ports are used to connect a wide variety of components, most commonly a mouse and keyboard.</p>
+                <p>HDMI – The HDMI port outputs video and audio to your monitor.</p>
+                <p>Audio – The audio jack allows you to connect standard headphones and speakers.</p>
+                <p>Micro USB – The Micro USB port is only for power, do not connect anything else to this port. Always connect the power after you have already connected everything else.</p>
+                <p>GPIO – The GPIO ports allow the Raspberry Pi to control and take input from any electronic component.</p>
+                <p>SD card slot – The Raspberry Pi uses SD cards the same way a full-size computer uses a hard drive. The SD card provides the Raspberry Pi with internal memory, and stores the hard drive.</p>
+                
+    <img src="25255898046_bf32f5aa51_k.jpg" style="width: 100%;" alt="" class="src"><hr>
+        <h4 style="color: white; text-align: center;">Specifications</h4><hr>
+            <p>CPU: Quad-core 64-bit ARM Cortex A53 clocked at 1.2 GHz</p>
             <p>GPU: 400MHz VideoCore IV multimedia</p>
             <p>Memory: 1GB LPDDR2-900 SDRAM (i.e. 900MHz)</p>
             <p>USB ports: 4</p>
@@ -41,15 +58,14 @@
             <p>Size: 85.60mm × 56.5mm</p>
             <p>Weight: 45g (1.6 oz)</p>
         
-
-        <img src="R-PI-3B-pinout_800x531.jpg.jpg" style="width: 100%;" alt="" class="src">
+        <img src="R-PI-3B-pinout_800x531.jpg.jpg" style="width: 100%;" alt="" class="src"><hr>
+        <h4 style="color: white; text-align: center;">GPIO Pins Overview</h4><hr>
         <p>A powerful feature of the Raspberry Pi is the row of GPIO (general-purpose input/output) pins along the top edge of the board. 
             A 40-pin GPIO header is found on all current Raspberry Pi boards (unpopulated on Pi Zero and Pi Zero W). 
             Prior to the Pi 1 Model B+ (2014), 
             boards comprised a shorter 26-pin header.</p>
         <p>Any of the GPIO pins can be designated (in software) as an input or output pin and used for a wide range of purposes.</p>
         <p>the numbering of the GPIO pins is not in numerical order; GPIO pins 0 and 1 are present on the board (physical pins 27 and 28) but are reserved for advanced use</p>
-    
         
     </body>
 </html>
