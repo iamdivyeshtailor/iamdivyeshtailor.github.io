@@ -33,7 +33,7 @@
             Building a rpi cluster on bigger scale makes it more expensive 
             It is only Good for some type of parallel Workloads.</p><hr>
 
-            <h4 style="color: white; text-align: center;">Raspberry PI B All Ports Specifications</h4> <hr>
+            <h4 style="color: white; text-align: center;">Raspberry PI Model B Ports Specifications</h4> <hr>
             <img src="rpi_700x.jpg" style="width: 100%;" alt="" class="src">
             <h4>Raspberry Pi 3 B Ports Specifications</h4>
                 <p>The Raspberry Pi has a number of ports which you will use to control the Raspberry Pi, and it can use to control other devices. Your Raspberry Pi will have the following ports:</p>
@@ -59,13 +59,42 @@
             <p>Weight: 45g (1.6 oz)</p>
         
         <img src="R-PI-3B-pinout_800x531.jpg.jpg" style="width: 100%;" alt="" class="src"><hr>
-        <h4 style="color: white; text-align: center;">GPIO Pins Overview</h4><hr>
-        <p>A powerful feature of the Raspberry Pi is the row of GPIO (general-purpose input/output) pins along the top edge of the board. 
-            A 40-pin GPIO header is found on all current Raspberry Pi boards (unpopulated on Pi Zero and Pi Zero W). 
-            Prior to the Pi 1 Model B+ (2014), 
-            boards comprised a shorter 26-pin header.</p>
-        <p>Any of the GPIO pins can be designated (in software) as an input or output pin and used for a wide range of purposes.</p>
-        <p>the numbering of the GPIO pins is not in numerical order; GPIO pins 0 and 1 are present on the board (physical pins 27 and 28) but are reserved for advanced use</p>
-        
-    </body>
+        <h4 style="color: white; text-align: center;">Raspberry Pi 3 GPIO Pinout / Pin diagram:</h4><hr>
+        <h4 style="color: white;">The Processor used in Raspberry Pi 3</h4>
+                <p>Broadcom BCM2837: It is a 1.2GHz 64bit ARM quad-core Cortex A53 processor, with 512 KiB shared L2 cache, dual-core VideoCore IV GPU @ 400 MHz supporting OpenGL ES 2.0, hardware-accelerated OpenVG, and 1080p30 H.264 high-profile decode.</p>
+                <p>A powerful feature of the Raspberry Pi is the row of GPIO (general-purpose input/output) pins along the extreme right edge of the board. Like every Raspberry Pi chipset, it consists of a 40-pin GPIO. A standard interface for connecting a single-board computer or microprocessor to other devices is through General-Purpose Input/Output (GPIO) pins. GPIO pins do not have a specific function and can be customized using the software.</p><hr>
+            <img src="Raspberry-Pi-3-Pinout.jpg" style="width: 100%;" alt="" class="src">
+            <h4 style="color: white;">Raspberry Pi 3 Power Pins:</h4>
+                <p>The board consists of two 5V pins, two 3V3 pins, and 9 ground pins (0V), which are unconfigurable.</p>
+                <p>5V: The 5v pins directly deliver the 5v supply coming from the mains adaptor. This pin can use to power up the Raspberry Pi, and it can also use to power up other 5v devices.</p>
+                <p>3.3V: The 3v pin is there to offer a stable 3.3v supply to power components and to test LEDs.</p>
+                <p>GND: Ground is commonly referred to as GND. All the voltages are measured with respect to the GND voltage.</p><hr>
+            <h4 style="color: white;">Raspberry Pi 3 Input/Outputs pins:</h4>
+                <p>A GPIO pin that is set as an input will allow a signal to be received by the Raspberry Pi that is sent by a device connected to this pin. A voltage between 1.8V and 3.3V will be read by the Raspberry Pi as HIGH and if the voltage is lower than 1.8V will be read as LOW. </p>
+                <p>A GPIO pin set as an output pin sends the voltage signal as high (3.3V) or low (0V). When this pin is set to HIGH, the voltage at the output is 3.3V and when set to LOW, the output voltage is 0V.</p>
+                <p>Along with the simple function of input and output pins, the GPIO pins can also perform a variety of alternative functions. Some specific pins are:</p><hr>
+            <h4 style="color: white;">PWM (pulse-width modulation) pins: </h4>
+                <p>Software PWM is available on all pins</p>
+                <p>Hardware PWM is available on these pins only: GPIO12, GPIO13, GPIO18, GPIO19</p><hr>
+            <h4 style="color: white;">SPI pins: </h4>
+                <p>SPI (Serial Peripheral Interface) is another protocol used for master-slave communication. It is used by the Raspberry pi board to quickly communicate between one or more peripheral devices. Data is synchronized using a clock (SCLK at GPIO11) from the master (RPi) and the data is sent from the Pi to our SPI device using the MOSI (Master Out Slave In) pin. If the SPI device needs to communicate back to Raspberry Pi, then it will send data back using the MISO (Master In Slave Out) pin. There are 5 pins involved in SPI communication:</p>
+                <p>GND: Connect all GND pins from all the slave components and the Raspberry Pi 3 board together.</p>
+                <p>SCLK: Clock of the SPI. Connect all SCLK pins together.</p>
+                <p>MOSI: It stands for Master Out Slave In. This pin is used to send data from the master to a slave.</p>
+                <p>MISO: It stands for Master In Slave Out. This pin is used to receive data from a slave to the master.</p>
+                <p>CE: It stands for Chip Enable. We need to connect one CE pin per slave (or peripheral devices) in our circuit. By default, we have two CE pins but we can configure more CE pins from the other available GPIO pins.</p><hr>
+            <h4 style="color: white;">SPI pins on board:</h4>
+                <p>SPI0: GPIO9 (MISO), GPIO10 (MOSI), GPIO11 (SCLK), GPIO8 (CE0), GPIO7 (CE1)</p>
+                <p>SPI1: GPIO19 (MISO), GPIO20 (MOSI), GPIO21 (SCLK), GPIO18 (CE0), GPIO17 (CE1), GPIO16 (CE2)</p><hr>
+            <h4 style="color: white;">I2C pins:</h4>
+                <p>2C is used by the Raspberry Pi board to communicate with devices that are compatible with Inter-Integrated Circuit (a low-speed two-wire serial communication protocol). This communication standard requires master-slave roles between both the devices. I2C has two connections: SDA (Serial Data) and SCL (Serial Clock). They work by sending data to and using the SDA connection, and the speed of data transfer is controlled via the SCL pin.</p>
+                <p>Data: (GPIO2), Clock (GPIO3)</p>
+                <p>EEPROM Data: (GPIO0), EEPROM Clock (GPIO1)</p><hr>
+            <h4 style="color: white;">UART Pins:</h4>
+            <p>Serial communication or the UART (Universal Asynchronous Receiver / Transmitter) pins provide a way to communicate between two microcontrollers or the computers. TX pin is used to transmit the serial data and RX pin is used to receive serial data coming from a different serial device.</p>
+            <p>TX (GPIO14)</p>
+            <p>RX (GPIO15)</p><hr>
+
+
+</body>
 </html>
