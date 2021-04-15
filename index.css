@@ -1,55 +1,6 @@
-    h1{
-    border: 2px solid chartreuse;
-    padding-bottom: 1em;
+h1{
     text-align: center; color: chartreuse; 
-    padding-top: 1em;
-    text-transform: uppercase;
-    block-size:1em;
-    text-underline-position: below;
 }
-div{
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;    
-    }
-.sidebar{
-        position: fixed;
-        left:0;
-        width: 200px;
-        height: 370px;
-        background:#e2e2e2
-    }
-.sidebar header{
-        font-size: 30px;
-        color: white;
-        text-align: center;
-        line-height: 100px;
-        background: chartreuse;
-        user-select: none;
-    }
-.sidebar ul a{
-        display: block;
-        height: 50px;
-        width: 150px;
-        line-height:50px;
-        font-size: 20px;
-        color: white;
-        padding-left: 30px;
-        box-sizing: border-box;
-        border-top: 1px solid rgba(255, 255, 255, 1.);
-        border-bottom: 1px solid black ;
-        transition: .4s;
-        cursor:-moz-zoom-in;
-    }
-ul li:hover a{
-    padding-left: 40px;
-}
-.sidebar ul a i{  
-    margin-right: 16px;  
-}
-
 body{
     background-color: white;
 }
@@ -61,30 +12,43 @@ p{
 img{
     padding-top: 35px;
 }
-#check{
-     display: none;
+a {
+    color: white ;
 }
 
-label #btn,label #cancel{
-     position: absolute;
-     cursor: pointer;
-     background: #e2e2e2;
-     border-radius: 3px; 
- }
- label #btn{
-    left: 40px;
-    top: 25px;
-    font-size: 35px;
-    color: white;
-    padding: 6px 12px;
+#sidebar{
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  left: -30%;
+  background-color:gray
+}
 
- }
- label #cancel{
-    z-index: 1111;
-    left: 195px;
-    top: 17px;
-    font-size: 30px;
-    color: white;
-    padding: 4px 9px;
-     
- }
+#sidebar li{
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  border-bottom: 2px solid black;
+  text-align: center;
+
+}
+
+.toggle-btn{
+  position: absolute;
+  left: 250px;
+  top: 15px;
+  border: 1px solid;color: white;
+}
+
+.toggle-btn span{
+  display: block;
+  background-color:white;
+  width: 30px;
+  height: 5px;
+  margin: 3px;
+  border: white;
+} 
+
+#sidebar.active{
+  left: 0%;
+}
