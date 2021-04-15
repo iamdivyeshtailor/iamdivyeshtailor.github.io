@@ -30,14 +30,15 @@ a {
   padding: 20px;
   border-bottom: 2px solid black;
   text-align: center;
-
+  transition: 4s;
 }
 
 .toggle-btn{
-  position: absolute;
-  left: 250px;
-  top: 15px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
   border: 1px solid;color: white;
+  
 }
 
 .toggle-btn span{
@@ -50,5 +51,5 @@ a {
 } 
 
 #sidebar.active{
-  left: 0%;
+  left: 0;
 }
