@@ -7,15 +7,25 @@
     text-underline-position: below;
 }
 a{
-    color: chartreuse;
-    padding-left: 2em;     
-    padding-inline-start: 1em; 
-    padding-inline-end: 1em;
+    color: black; font-weight: bold;
+    padding-inline-start: 1em;
+    padding-inline-end: 1em; 
     padding-bottom: 1em; 
     padding-top: 1em; 
-    border:solid 1px chartreuse           
+    border:solid 2px black
+    
+    
+    
 }
+div{
+    background-color: white;
+    padding-inline-start: 1em; 
+    padding-inline-end: 1em; 
+    padding-bottom: 1em; 
+    padding-top: 1em; 
+    
 }
+
 body{
     background-color: black;
 
@@ -24,14 +34,7 @@ p{
     color:white;
    
 }
-ul{
-    text-align: left;
-    color: chartreuse;
-    }
-h4{
-    padding-left: 11em;
-    
-    }
+
 img{
     padding-top: 35px;
     interval: 1

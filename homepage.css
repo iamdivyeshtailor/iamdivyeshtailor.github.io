@@ -11,23 +11,14 @@ h3{
     text-align: center;
     
 }
-p{ 
-    color: chartreuse;
-    padding-left: 5em;
-    padding-right: 5em;
-}
 
 body{
-    background-color: darkgray;
+    background-color:black
 }
 div{
     margin: 0.5cm;
     color: whitesmoke;
     font-weight: 700;
-    padding-right: 3em;
-    padding-left: 3em;
-    padding-top: 3em;
-    padding-bottom: 3em;
     
     
 }

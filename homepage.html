@@ -6,74 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="homepage.css">
-    <style>
-        div {
-          background-image: url('signal-2021-02-28-150919-4.jpg');
-        }
-        </style>
 </head>
 <body>
     <h1>HOMEPAGE</h1><hr>
     <h3>THIS IS WHAT. OUR PROJECT IS BASED ON</h3><hr>
     <div>
-        Good Morning Sir, Myself Divyesh Tailor Today We will talk about our final year project. Which is Clustering with Raspberry pi . we will talk about "Why we Choose this project, brief explanation, how everything works and some limitations"<br>
-    we Choose this project for 2 main reasons , To learn and expriment the nature of parallization and effectiveness of SBC or Single board computers like Raspberry pi, Odriod Xu4 and Asus ThinkerBoard.</br>
-    So what is a super computer</br>
-    The general defination states that a super computer is a computer with a high level of performance compared to a Normal computer.</br>
-    The speed of a super computer Is measured in FLOPS or Floting Point Operation per second.</br>
-    One of the example of of super computer is Titan Super computer.</br>
-    Titan is equipped with 18,688 CPUs And GPUs which gives Speed of 17.59 PetaFlops and Theoretical Peak of 27 Peta Flops.</br>
+        
+        <p>Good Morning, Myself Divyesh Tailor Today We will talk about our final year project. Which is Clustering with Raspberry pi . we will talk about "Why we Choose this project, brief explanation, how everything works and some limitations"</p>
+        <p>we Choose this project for 2 main reasons , To learn and expriment the nature of parallization and effectiveness of SBC or Single board computers like Raspberry pi, Odriod Xu4 and Asus ThinkerBoard.</p>
+        <p>So what is a super computer</p>
+        <p>The general defination states that a super computer is a computer with a high level of performance compared to a Normal computer.</p>
+        <p>The speed of a super computer Is measured in FLOPS or Floting Point Operation per second.</p>
+        <p>One of the example of of super computer is Titan Super computer.</p>
+        <p>Titan is equipped with 18,688 CPUs And GPUs which gives Speed of 17.59 PetaFlops and Theoretical Peak of 27 Peta Flops.</p>
+        <p>A Normal computer runs at about 80 GigaFlops.</p>
+        <p>which basically means creating a bunch of computers connected via LAN to Share and Process data at High Speed Using Parallization.</p>
+        <p>Parallelization is the act of designing a computer program or system to process data in parallel. Normally, computer programs compute data serially: they solve one problem, and then the next, then the next. If a computer program or system is parallelized, it breaks a problem down into smaller Segments that can each independently be solved at the same time by discrete computing resources. When optimized for this type of computation, parallelized programs can arrive at a solution much faster than programs executing processes in serial.</p>
+        <p>This project uses 4 raspberry Pi's which makes it 4 node cluster.</p>
+        <p>so after reading the name of the project a question comes into your mind which is "What is cluster?"</p>
+        <p>The Defination of cluster states the following :- "A cluster is a group of computers that are connected with each other and operate closely to act as a single computer. Speedy local area networks enhance a cluster of computers' abilities to operate at an exceptionally rapid pace."</p>
+        <p>In this project we Used raspberry pi 3 Model B+ because it runs 64bit quad core ARM based processor running at 1.4Ghz, 1Gb of LPDDR2 Ram ,Onboard bluethooth and Wifi , 100mbps ethernet port and much more in just 35USD which is 3300INR.</p>
+        <p>It is also Small as a size of credit card and conusme less power.</p>
+        <p>Here are Some Detailed Specifications of Model B+</p>
+        <p>Now the Operating System of Raspberry pi</p>
+        <p>Raspberry pi has its own OS called Raspbian</p>
+        <p>Raspbian is a free operating system based on Debian optimized for the Raspberry Pi hardware. An operating system is the set of basic programs and utilities that make your Raspberry Pi run. However, Raspbian provides more than a pure OS: it comes with over 35,000 packages, pre-compiled software bundled in a nice format for easy installation on your Raspberry Pi.</p>
+        <p>External network i.e LAN.</p>
+        <p>Mpich is Based on MPI, A message passing Interface which enable nodes to send and recieve messages and data as well as run programs in Parallel process.MPICH supports c++,fortan,python.</p>
+        <p>Mpich is Way For nodes to communicate and share data between them.</p>
+        <p>This is the Basic Cluster Design</p>
+        <p>Master node and compute node will be connected to ethernet switch. All Compute Node are Connected to Master node via Seperate Internal Network and Master node is connected to external network.</br></p>
+        <p>We Seen some usage of the This cluster but for now we only plan to benchmark the cluster so see how well it perform.</p>
+        <p>So here linpack benchmark is used to to test the performance of system. It is measured in FLOPS.</p>
+        <p>This aims to approximate how fast a computer will perform when solving real problems.</p>
+        <p> So what is flops You might ask. Flops or Floating Point Operation Per Second is a measure of computer performance which is useful in field of Scientific computation.</p>
+        <p>Like we seen titen which runs at 17.56 PetaFlops which is the speed of that super computer. A normal Computer runs at around 80 gigaflops, My computer here Runs at Maximum of 140 gigaflops and a flagship phone runs at around 4 gigaflops.</p>
+        <p>Linpack itself does not support testing in parallel Computing HPlinpack or Highly parallel linpack is used.</p><hr>
+    
+        <h4>Here are some terms used while testing:</h4>
+            <p>Rmax: it is the performance IN GFLOPS For the largest Problem run on the machine</p>
+            <p>Nmax: is the size of the largest problem run on a machine</p>
+            <p> N1/2: the size where half the Rmax execution rate us achieved.</p>
+            <p>Rpeak: it is the theoretical peak performance of the machine in GIGAFLOPS.</p><hr>
+        <h4>Here We have  some advantages  for our project :-</h4>
+            <p>1.Some algorithm can run more efficiently in cluster environment.</p>
+            <p>2.Decreasing processing time by taking the advantage of parallel processing</p> 
+            <p>3.Solve bigger and Complex Programs is  much easier and faster manner.</p>
+            <p>4.Allows for virtual testing. For example simulation of Virus acting on Human cells.</p><hr>
 
-    A Normal computer runs at about 80 GigaFlops.</br>
+        <h4>Here are some limitations of Our project  -</h4>
+            <p>1.As we know raspberry pi only has 1 gb of onboard memory</p>
+            <p>2.Some programs can only utilize  25% of total cluster capability. They use one core per node making it inefficient</p>
+            <p>3.A modern Core i7 can easily beat 4 node rpi cluster in single threadded workloads.</p>
+            <p>4.Building a rpi cluster on bigger scale makes it more expensive </p>
+            <p>5.It is only Good for some type of parallel Workloads.</p><hr>
 
-    which basically means creating a bunch of computers connected via LAN to Share and Process data at High Speed Using Parallization.</br>
-    Parallelization is the act of designing a computer program or system to process data in parallel. Normally, computer programs compute data serially: they solve one problem, and then the next, then the next. If a computer program or system is parallelized, it breaks a problem down into smaller Segments that can each independently be solved at the same time by discrete computing resources. When optimized for this type of computation, parallelized programs can arrive at a solution much faster than programs executing processes in serial</br>
-
-    This project uses 4 raspberry Pi's which makes it 4 node cluster.</br>
-    so after reading the name of the project a question comes into your mind which is "What is cluster?"</br>
-    The Defination of cluster states the following :- "A cluster is a group of computers that are connected with each other and operate closely to act as a single computer. Speedy local area networks enhance a cluster of computers' abilities to operate at an exceptionally rapid pace."</br>
-    In this project we Used raspberry pi 3 Model B+ because it runs 64bit quad core ARM based processor running at 1.4Ghz, 1Gb of LPDDR2 Ram ,Onboard bluethooth and Wifi , 100mbps ethernet port and much more in just 35USD which is 3300INR.</br>
-    It is also Small as a size of credit card and conusme less power.</br>
-    Here are Some Detailed Specifications of Model B+</br>
-    Now the Operating System of Raspberry pi</br>
-    Raspberry pi has its own OS called Raspbian</br>
-    Raspbian is a free operating system based on Debian optimized for the Raspberry Pi hardware. An operating system is the set of basic programs and utilities that make your Raspberry Pi run. However, Raspbian provides more than a pure OS: it comes with over 35,000 packages, pre-compiled software bundled in a nice format for easy installation on your Raspberry Pi.</br>
-    External network i.e LAN.</br>
-    Mpich is Based on MPI, A message passing Interface which enable nodes to send and recieve messages and data as well as run programs in Parallel process.MPICH supports c++,fortan,python.</br>
-    Mpich is Way For nodes to communicate and share data between them.</br>
-    This is the Basic Cluster Design</br>
-    Master node and compute node will be connected to ethernet switch. All Compute Node are Connected to Master node via Seperate Internal Network and Master node is connected to external network.</br>
-    We Seen some usage of the This cluster but for now we only plan to benchmark the cluster so see how well it perform.</br>
-    So here linpack benchmark is used to to test the performance of system. It is measured in FLOPS.</br>
-    This aims to approximate how fast a computer will perform when solving real problems.</br>
-    So what is flops You might ask. Flops or Floating Point Operation Per Second is a measure of computer performance which is useful in field of Scientific computation.</br>
-    Like we seen titen which runs at 17.56 PetaFlops which is the speed of that super computer. A normal Computer runs at around 80 gigaflops, My computer here Runs at Maximum of 140 gigaflops and a flagship phone runs at around 4 gigaflops.</br>
-    Linpack itself does not support testing in parallel Computing HPlinpack or Highly parallel linpack is used.</br>
-
-
-    Here are some terms used while testing:</br>
-    Rmax: it is the performance IN GFLOPS For the largest Problem run on the machine</br>
-    Nmax: is the size of the largest problem run on a machine</br>
-    N1/2: the size where half the Rmax execution rate us achieved.</br>
-    Rpeak: it is the theoretical peak performance of the machine in GIGAFLOPS.</br><hr>
-
-    Here We have  some advantages  for our project :-</br>
-    1.Some algorithm can run more efficiently in cluster environment.</br>
-    2.Decreasing processing time by taking the advantage of parallel processing </br>
-    3.Solve bigger and Complex Programs is  much easier and faster manner.</br>
-    4.Allows for virtual testing. For example simulation of Virus acting on Human cells.</br><hr>
-
-    Here are some limitations of Our project  -</br>
-    1.As we know raspberry pi only has 1 gb of onboard memory</br>
-    2.Some programs can only utilize  25% of total cluster capability. They use one core per node making it inefficient</br>
-    3.A modern Core i7 can easily beat 4 node rpi cluster in single threadded workloads.</br>
-    4.Building a rpi cluster on bigger scale makes it more expensive </br>
-    5.It is only Good for some type of parallel Workloads.</br><hr>
-
-    In Future we would like to do following changes to our project like :-</br>
-    1.Increasing the efficiency of cluster</br>
-    2.Create a more convenient power distribution system to each raspberry pi.</br><hr>
-    </div>
-
+        <h4>In Future we would like to do following changes to our project like :-</h4>
+            <p>1.Increasing the efficiency of cluster</p>
+            <p>2.Create a more convenient power distribution system to each raspberry pi.<hr></p>
+    
+        </div>
 </body>
 </html>
