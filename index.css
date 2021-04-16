@@ -53,29 +53,3 @@ a {
 #sidebar.active{
   left: 0;
 }
-
-
-h1::before {  
-  transform: scaleX(0);
-  transform-origin: bottom right;
-}
-
-h1:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-h1::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  inset: 0 0 0 0;
-  background-color: white;
-  z-index: -1;
-  transition: transform .3s ease;
-}
-
-h1 {
-  position: relative;
-}
