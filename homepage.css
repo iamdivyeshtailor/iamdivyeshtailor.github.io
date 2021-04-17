@@ -1,7 +1,8 @@
 h1{
-    border: 3px solid black;
+    border: 3px solid #293f50;
     padding-bottom: 1em;
-    text-align: center; color: #293f50; padding-top: 1em;
+    text-align: center; color: #293f50; 
+    padding-top: 1em;
     text-transform: uppercase;
     block-size:1em;
     text-underline-position: below;
@@ -9,16 +10,15 @@ h1{
 h3{
     color:#293f50;
     text-align: center;
-    
 }
 
 body{
     background:linear-gradient( lightgrey, #293f50);
 }
 div{
-    margin: 0.5cm;
+    margin: 0.10cm;
     color: whitesmoke;
-    font-weight: 700;
+    font-weight: 600;
     
     
 }
