@@ -1,19 +1,19 @@
 h1{
     border: 3px solid black;
     padding-bottom: 1em;
-    text-align: center; color: chartreuse; padding-top: 1em;
+    text-align: center; color: #293f50; padding-top: 1em;
     text-transform: uppercase;
     block-size:1em;
     text-underline-position: below;
 }
 h3{
-    color: chartreuse;
+    color:#293f50;
     text-align: center;
     
 }
 
 body{
-    background-color:black
+    background:linear-gradient( lightgrey, #293f50);
 }
 div{
     margin: 0.5cm;

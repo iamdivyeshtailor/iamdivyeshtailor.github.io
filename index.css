@@ -1,9 +1,11 @@
 h1{
-    text-align: center; color: chartreuse; 
+    text-align: center; color:#293f50; 
+    
 }
 body{
-    background-color: white;
+    background:linear-gradient( lightgrey, #293f50);
 }
+
 
 p{ 
     color:white;   
@@ -12,8 +14,9 @@ p{
 img{
     padding-top: 35px;
 }
+
 a {
-    color: white ;
+    color:#293f50 ;
 }
 
 #sidebar{
@@ -21,29 +24,32 @@ a {
   width: 60%;
   height: 100%;
   left: -120%;
-  background-color:gray
+  background-color:lightgray
 }
 
 #sidebar li{
-  color: white;
+  color:lightgrey;
   font-size: 25px;
   padding: 10px;
   border-bottom: 2px solid black;
   text-align: center;
   transition: 1s;
+  border: 3px solid #293f50;
+  transition: all;
+  margin: 3px;
 }
 
 .toggle-btn{
   position: fixed;
   left: 10px;
   top: 10px;
-  border: 1px solid;color: white;
+  border: 2px solid;color: #293f50;
   
 }
 
 .toggle-btn span{
   display: block;
-  background-color:white;
+  background-color: #293f50;
   width: 30px;
   height: 5px;
   margin: 3px;
@@ -53,3 +59,4 @@ a {
 #sidebar.active{
   left: 0;
 }
+
