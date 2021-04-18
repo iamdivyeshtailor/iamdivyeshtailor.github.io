@@ -1,31 +1,23 @@
-html {
-  background: #e6e9e9;
-  background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
-  -webkit-font-smoothing: antialiased;
-}
 h1{
     text-align: center; color:#293f50; 
-    
+}
+h2 {
+  margin-top: 1.3em;
+  text-align: center;
+}
+h3, h4, h5, h6 {
+  margin: 0.10cm;
+  color:#293f50;
 }
 body{
   background:linear-gradient( lightgrey,black);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;
-}
-h2, h3, h4, h5, h6 {
-  margin: 0.10cm;
-  color:#293f50;
-}
-
-h2 {
-  margin-top: 1.3em;
-  text-align: center;
-  
+    max-width: 600px;
 }
 table{
   margin: 0.10cm;
@@ -37,9 +29,8 @@ p{
     color:white;   
 }
 h4{
-  
-}font-weight: 510;
-
+  font-weight: 510;
+}
 img{
     padding-top: 35px;
 }
@@ -50,7 +41,7 @@ a {
 
 #sidebar{
   position: fixed;
-  width: 67%;
+  width: 50%;
   height: 100%;
   left: -120%;
   background-color:lightgray
@@ -71,7 +62,7 @@ a {
 .toggle-btn{
   position: fixed;
   left: 10px;
-  top: 22px;
+  top: 10px;
   border: 2px solid;color: #293f50;
   }
 
@@ -99,7 +90,7 @@ a {
 }
 
 b, strong {
-  font-weight: 600;
+  font-weight: 510;
 }
 
 samp {
@@ -110,11 +101,11 @@ img {
   -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
           animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
   background: transparent;
-  border: 10px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border: 5px solid rgba(0, 0, 0, 0.12);
+  border-radius: 1px;
   display: block;
-  margin: 1.3em auto;
-  max-width: 100%;
+  margin: 1px auto;
+  width: 100%;
 }
 
 @-webkit-keyframes colorize {
@@ -140,15 +131,7 @@ figcaption {
 }
 
 pre {
-   -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-          animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-  background: transparent;
-  border: 5px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  display: block;
-  margin: 1.3em auto;
-  max-width: 100%;
-  background-color: darkgray
+   
 }
 p{
   margin: 0.10cm;
