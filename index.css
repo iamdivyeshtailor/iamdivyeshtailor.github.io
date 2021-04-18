@@ -10,14 +10,12 @@ h3, h4, h5, h6 {
   color:#293f50;
 }
 body{
-  background:linear-gradient( lightgrey,black);
-
+    background:linear-gradient( lightgrey,black);
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    
+    
     margin: 0 auto;
-    max-width: 600px;
 }
 table{
   margin: 0.10cm;
@@ -41,7 +39,7 @@ a {
 
 #sidebar{
   position: fixed;
-  width: 50%;
+  width: 40%;
   height: 100%;
   left: -120%;
   background-color:lightgray
@@ -61,8 +59,8 @@ a {
 
 .toggle-btn{
   position: fixed;
-  left: 10px;
-  top: 10px;
+  left: 8px;
+  top: 8px;
   border: 2px solid;color: #293f50;
   }
 
@@ -141,7 +139,7 @@ p{
 figcaption, figure{
   margin: 0.10cm;
   color: whitesmoke;
-  font-weight: 600;
+  font-size: 16px;
 }
 ul,li {
   margin: 0.10cm;
